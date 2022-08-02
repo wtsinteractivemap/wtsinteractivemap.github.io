@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/App.js | wts-interactive-map</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A dynamic and interactive map."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="wts-interactive-map"><meta property="twitter:description" content="A dynamic and interactive map."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="/">&lt; Back</a>
+  <!-- <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a> -->
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/App.js~App.html">App</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/App.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import &apos;./styles/index.scss&apos;;
+import Mustache from &apos;mustache&apos;;
+import $ from &apos;jquery&apos;;
+import { gsap, TweenLite, Power1 } from &apos;gsap/all&apos;;
+import countries from &apos;./config/countries.json&apos;;
+import rCountries from &apos;./config/related-countries.json&apos;;
+import continents from &apos;./config/continents.json&apos;;
+import pins from &apos;./config/pins.json&apos;;
+import mainTemplate from &apos;./templates/main.html&apos;;
+import childMapTemplate from &apos;./templates/child-map.html&apos;;
+import childMapModalTemplate from &apos;./templates/child-map-modal.html&apos;;
+import globalMapTemplate from &apos;./templates/map-global.html&apos;;
+import americaMapTemplate from &apos;./templates/map-america.html&apos;;
+import africaMapTemplate from &apos;./templates/map-africa.html&apos;;
+import asiaMapTemplate from &apos;./templates/map-asia.html&apos;;
+import europeMapTemplate from &apos;./templates/map-europe.html&apos;;
+
+gsap.registerPlugin(TweenLite);
+
+const scriptEl = document.currentScript;
+
+export default class App{
+    /**
+     * Initialize the object instance
+     * @constructor
+     */
+    constructor(){
+        this.$container = $(&apos;#wtsim-container&apos;);
+
+        if(!this.$container.length)
+            return;
+
+        this.defaultColor = window.WTSIM_DEFAULT_COLOR || &apos;#dcdfe1&apos;;
+        this.accentColor = window.WTSIM_ACCENT_COLOR || &apos;#cc1f36&apos;;
+
+        this.render();
+    }
+
+    /**
+     * Renders the initial display
+     */
+    render(){
+        // set modal container
+        $(&apos;body&apos;).append($(&apos;&lt;div class=&quot;wtsim-map-modals&quot;&gt;&lt;/div&gt;&apos;));
+
+        // Child Maps and Child Map Modals
+        let childMaps = &apos;&apos;, childMapModals = &apos;&apos;;
+        continents.map(continent =&gt; {
+            var map;
+
+            if(&apos;americas&apos; === continent.id)
+                map = americaMapTemplate;
+            else if(&apos;africa&apos; == continent.id)
+                map = africaMapTemplate;
+            else if(&apos;asia&apos; == continent.id)
+                map = asiaMapTemplate;
+            else if(&apos;europe&apos; == continent.id)
+                map = europeMapTemplate;
+
+            childMaps += Mustache.render(childMapTemplate, {
+                ID: continent.id,
+                MAP: map,
+            });
+
+            childMapModals += Mustache.render(childMapModalTemplate, {
+                ID: continent.id,
+                MAP: map,
+                TITLE: continent.name,
+                DESCRIPTION: window.WTSIM_INNER_DESCRIPTION || &apos;To learn more about jurisdiction-specific developments, click on the yellow pin and choose the relevant WTS Global publication of choice.&apos;,
+                MAP_PINS: this.generatePins(continent.countries)
+            });
+        });
+
+        this.$container.append(Mustache.render(mainTemplate, {
+            TITLE: window.WTSIM_MAIN_TITLE || &apos;[insert title]&apos;,
+            DESCRIPTION: window.WTSIM_MAIN_DESCRIPTION || &apos;[insert your description here]&apos;,
+            GLOBAL_MAP: globalMapTemplate,
+            CHILD_MAPS: childMaps
+        })).addClass(&apos;wtsim-loaded&apos;);
+
+        $(&apos;.wtsim-map-modals&apos;).html(childMapModals);
+
+        this.eventHandlers();
+
+        this.fixSVGonIE();
+
+        this.fetchPins(window.interactiveMap2_Countries || this.$container.data(&apos;countries&apos;));
+        
+        $(&apos;body&apos;).addClass(&apos;wtsim-initialized&apos;);
+
+        console.log(&apos;wtsim initialized.&apos;);
+    }
+
+    /**
+     * Attaches event handlers to the specified element
+     */
+    eventHandlers(){
+        // Paths on click
+        var pathTriggers = [
+            {
+                paths: [&apos;Europe&apos;],
+                childMap: &apos;#child-map-europe&apos;,
+                mapModal: &apos;#map-modal-europe&apos;
+            },
+            {
+                paths: [&apos;South America&apos;, &apos;North America&apos;],
+                childMap: &apos;#child-map-americas&apos;,
+                mapModal: &apos;#map-modal-americas&apos;
+            },
+            {
+                paths: [&apos;Africa&apos;],
+                childMap: &apos;#child-map-africa&apos;,
+                mapModal: &apos;#map-modal-africa&apos;
+            },
+            {
+                paths: [&apos;Asia&apos;, &apos;Australia &amp; Oceania&apos;],
+                childMap: &apos;#child-map-asia&apos;,
+                mapModal: &apos;#map-modal-asia&apos;
+            }
+        ];
+        pathTriggers.map(trigger =&gt; {
+            trigger.paths.map(path =&gt; {
+                var $childMap = $(trigger.childMap),
+                    $mapModal = $(trigger.mapModal);
+                
+                this.$container.on(&apos;click&apos;, &apos;.wtsim-global-map .wtsim-map svg [data-name=&quot;&apos;+path+&apos;&quot;] path&apos;, () =&gt; {
+                    this.childMapsTransition({
+                        from: $childMap.get(0),
+                        to: $mapModal.get(0),
+                        before: () =&gt; {},
+                        after: () =&gt; {
+                            $(&apos;body&apos;).addClass(&apos;wtsim-child-map-open&apos;);
+                            setTimeout(() =&gt; {$mapModal.addClass(&apos;wtsim-ready&apos;);}, 300);
+                        }
+                    });
+
+                    // this.removeButtons();
+                });
+                
+                $mapModal.on(&apos;click&apos;, &apos;.wtsim-map-modal-close&apos;, () =&gt; {
+                    this.childMapsTransition({
+                        from: $mapModal.get(0),
+                        to: $childMap.get(0),
+                        before: () =&gt; {},
+                        after: () =&gt; {
+                            $(&apos;body&apos;).removeClass(&apos;wtsim-child-map-open&apos;);
+                            $mapModal.removeClass(&apos;wtsim-ready&apos;);
+                        }
+                    });
+
+                    // this.removeButtons();
+                    this.hidePubsBox();
+                });
+            });
+        });
+
+
+        // Name tag on mouse hover
+        $(&apos;body&apos;).find(&apos;.wtsim-map&apos;).each((key, map) =&gt; {
+            $(&apos;svg [data-name=Countries] path&apos;, map).on(&apos;mousemove&apos;, this.showNameTag);
+            $(&apos;svg [data-name=Countries] path&apos;, map).on(&apos;mouseout&apos;, this.hideNameTag);
+        });
+
+        // Click on pins
+        $(&apos;.wtsim-pin&apos;).on(&apos;click&apos;, this.clickPins.bind(this));
+
+        // Click on different areas of countries
+        $(&apos;.wtsim-map-modals&apos;).on(&apos;click&apos;, &apos;svg [data-name=Countries] path&apos;, this.clickMapArea.bind(this));
+
+        // Click on different areas of map
+        $(&apos;.wtsim-map-modals&apos;).on(&apos;click&apos;, (e) =&gt; {
+            if(!$(e.target).hasClass(&apos;wtsim-pin&apos;) &amp;&amp; e.target.nodeName.toLowerCase() != &apos;path&apos; &amp;&amp; !$(e.target).hasClass(&apos;wtsim-button&apos;)){
+                // this.removeButtons();
+                // this.hideSidebar();
+                // this.hidePubsBox();
+            }
+        });
+
+        // Click sidebar close button
+        $(&apos;body&apos;).on(&apos;click&apos;, &apos;.wtsim-sidebar-close&apos;, () =&gt; {
+            this.hideSidebar();
+        });
+
+        // click pubs close button
+        $(&apos;body&apos;).on(&apos;click&apos;, &apos;.wtsim-pubs .wtsim-pubs-close&apos;, () =&gt; {
+            this.hidePubsBox();
+        });
+    }
+
+    /**
+     * Animates the map when zooming in/out
+     * @param {Object} args
+     */
+    childMapsTransition(args){
+        var fromMap     = args.from,
+            toMap       = args.to,
+            clone       = fromMap.cloneNode(true),
+            before      = args.before,
+            after       = args.after;
+
+        var from    = this.calculatePosition(fromMap),
+            to      = this.calculatePosition(toMap);
+
+        if(typeof before === &apos;function&apos;)
+            before();
+        
+        TweenLite.set([fromMap, toMap], { visibility: &apos;hidden&apos;, scrollTop: 0 });
+        TweenLite.set(clone, { position: &apos;absolute&apos;, margin: 0, opacity: 1, visibility: &apos;visible&apos;, backgroundColor: &apos;#fff&apos; });
+            
+        document.body.appendChild(clone);
+        $(&apos;body&apos;).addClass(&apos;wtsim-transitioning&apos;);
+            
+        var style = {
+            x: to.left - from.left,
+            y: to.top - from.top,
+            width: to.width,
+            height: to.height,
+            autoRound: false,
+            ease: Power1.easeOut,
+            onComplete: function(){
+                TweenLite.set(toMap, { visibility: &quot;visible&quot; });
+
+                document.body.removeChild(clone);
+                $(&apos;body&apos;).removeClass(&apos;wtsim-transitioning&apos;);
+
+                if(typeof after === &apos;function&apos;)
+                    after();
+            }
+        };
+        
+        TweenLite.set(clone, from);  
+        TweenLite.to(clone, 0.8, style);
+    }
+
+    /**
+     * Calculate the position of child map
+     * @param {Element} element
+     */
+    calculatePosition(element){
+        var root    = document.documentElement,
+            body    = document.body;
+            
+        var rect = element.getBoundingClientRect();
+        
+        var scrollTop  = window.pageYOffset || root.scrollTop  || body.scrollTop  || 0;
+        var scrollLeft = window.pageXOffset || root.scrollLeft || body.scrollLeft || 0;
+        
+        var clientTop  = root.clientTop  || body.clientTop  || 0;
+        var clientLeft = root.clientLeft || body.clientLeft || 0;
+        
+        return {
+            top: Math.round(rect.top + scrollTop - clientTop),
+            left: Math.round(rect.left + scrollLeft - clientLeft),
+            height: rect.height,
+            width: rect.width,
+        };
+    }
+
+    /**
+     * Display the map label name
+     * @param {Event} event
+     */
+    showNameTag(event){
+        var $map = $(this).closest(&apos;.wtsim-map&apos;),
+            $tag = $map.find(&apos;.wtsim-name-tag&apos;),
+            name = $(this).data(&apos;name&apos;) || $(this).parent().data(&apos;name&apos;),
+            offset = $map.get(0).getBoundingClientRect();
+
+        window.WTSIM_CURRENT_HOVER = name;
+
+        $tag.text(name).css({
+            display: &apos;block&apos;,
+            left: Math.abs(offset.left - event.clientX - 10) + &apos;px&apos;,
+            top: Math.abs(offset.top - event.clientY - 10) + &apos;px&apos;
+        });
+
+        $(`[data-name=&quot;${name}&quot;]`).addClass(&apos;is-hovered&apos;);
+
+        if(rCountries[name]){
+            $.each(rCountries[name], (i, e) =&gt; {
+                $(`[data-name=&quot;${e}&quot;]`).addClass(&apos;is-hovered&apos;);
+            });
+        }
+    }
+
+    /**
+     * Hide the map label name
+     */
+    hideNameTag(){
+        let name = $(this).data(&apos;name&apos;) || $(this).parent().data(&apos;name&apos;);
+        
+        $(this).closest(&apos;.wtsim-map&apos;).find(&apos;.wtsim-name-tag&apos;).text(&apos;&apos;).css(&apos;display&apos;, &apos;none&apos;);
+
+        $(`[data-name=&quot;${name}&quot;]`).removeClass(&apos;is-hovered&apos;);
+
+        if(rCountries[name]){
+            $.each(rCountries[name], (i, e) =&gt; {
+                $(`[data-name=&quot;${e}&quot;]`).removeClass(&apos;is-hovered&apos;);
+            });
+        }
+    }
+
+    /**
+     * @param {Event} event
+     */
+    clickPins(event){
+        if($(event.target).data(&apos;items&apos;)){
+            event.preventDefault();
+            this.showPubsBox(event);
+        }
+    }
+
+    /**
+     * @param {Event} event
+     */
+    clickMapArea(event){
+        let name = $(event.target).data(&apos;name&apos;) || $(event.target).parent().data(&apos;name&apos;);
+        let code = Object.keys(countries).find(key =&gt; countries[key].toLowerCase() === name.toLowerCase());
+
+        if(code){
+            let $pin = $(`#pin-${code}`);
+
+            if($pin.length)
+                $pin[0].click();
+        }
+    }
+
+    /**
+     * Shows the publication box
+     * @param {Event} event
+     */
+    showPubsBox(event){
+        const el = event.target;
+
+        if(!$(el).length)
+            return;
+
+        const items = $(el).data(&apos;items&apos;);
+
+        if(!items)
+            return;
+
+        const code = $(el).data(&apos;code&apos;);
+
+        let count = 1;
+        const list = items.filter((e, i) =&gt; i&lt;999).map(item =&gt; {
+            const name = item.name || `Publication ${count++}`;
+            const type = item.type;
+            const href = this.identifyUrlByType(type, item.url);
+
+            return `&lt;li&gt;&lt;a href=&quot;${href}&quot; target=&quot;_blank&quot;&gt;${name}&lt;/a&gt;&lt;/li&gt;`;
+        }).join(&apos;&apos;);
+
+        const $modal = $(&apos;body.wtsim-child-map-open&apos;).find(&apos;.wtsim-map-modal.wtsim-ready&apos;),
+                $box = $modal.find(&apos;.wtsim-pubs&apos;);
+
+        $box.find(&apos;.wtsim-pubs-head h3&apos;).text(countries[code]);
+        $box.find(&apos;.wtsim-pubs-body&apos;).html(&apos;&lt;ul class=&quot;wtsim-pubs-nav&quot;&gt;&apos;+list+&apos;&lt;/ul&gt;&apos;);
+
+        const top = $(`#pin-${code}`).css(&apos;top&apos;);
+
+        $box.css(&apos;top&apos;, top).addClass(&apos;wtsim-active&apos;);
+    }
+
+    /**
+     * Hides the any visible publication box
+     */
+    hidePubsBox(){
+        $(&apos;.wtsim-map-modal .wtsim-pubs&apos;).removeClass(&apos;wtsim-active&apos;);
+
+        setTimeout(() =&gt; {
+            $(&apos;.wtsim-map-modal.wtsim-ready .wtsim-pubs .wtsim-pubs-head h3&apos;).text(&apos;&apos;);
+            $(&apos;.wtsim-map-modal.wtsim-ready .wtsim-pubs .wtsim-pubs-body&apos;).html(&apos;&apos;);
+        }, 400);
+    }
+
+    /**
+     * Identify url by type
+     * @param {String} type
+     * @param {String} url
+     */
+    identifyUrlByType(type, url){
+        let href;
+        
+        switch(type){
+            case(&apos;pdf&apos;):
+                href = `${this.getPDFViewerUrl()}?file=${url}`;
+                break;
+            default:
+                href = url;
+        }
+
+        return href;
+    }
+
+    /**
+     * Creates all pins
+     * @param {Array} items
+     */
+    generatePins(items){
+        if(!Array.isArray(items))
+            return;
+
+        var element = &apos;&lt;div class=&quot;wtsim-map-pins&quot;&gt;&apos;;
+
+        items.map(code =&gt; {
+            if($.inArray(code, Object.keys(pins)) !== -1){
+                element += `&lt;a class=&quot;wtsim-pin&quot; id=&quot;pin-${code}&quot; data-code=&quot;${code}&quot; data-name=&quot;${countries[code]}&quot; style=&quot;left:${pins[code][0]}%;top:${pins[code][1]}%;&quot; target=&quot;_blank&quot;&gt;&lt;span&gt;${countries[code]}&lt;/span&gt;&lt;/a&gt;`;
+            }
+        });
+
+        element += &apos;&lt;/div&gt;&apos;;
+
+        return element;
+    }
+
+    /**
+     * Fix SVG on Internet explorer
+     */
+    fixSVGonIE(){
+        if(window.document.documentMode){
+            var svg = document.querySelectorAll(&apos;svg[data-ie-ratio]&apos;);
+
+            for(var i=0;i&lt;svg.length;i++){
+                var ratio = JSON.parse(svg[i].getAttribute(&apos;data-ie-ratio&apos;));
+
+                svg[i].setAttribute(&apos;preserveAspectRatio&apos;, &apos;xMidYMin slice&apos;);
+                svg[i].style.width = &apos;100%&apos;;
+                svg[i].style.overflow = &apos;visible&apos;;
+                svg[i].style.height = &apos;1px&apos;;
+                svg[i].style.paddingBottom = (ratio[1]/ratio[0]*100)+&apos;%&apos;;
+            }
+        }
+    }
+
+    /**
+     * Get the pins
+     * @param {Array} input
+     */
+    fetchPins(input){
+        this.clearPins();
+
+        const data = input || {};
+
+        if(!Object.values(data).length){
+            console.log(&apos;Data is empty.&apos;);
+            return;
+        }
+
+        this.fillCountries();
+        data.availableCountries.map(code =&gt; {
+            this.fillCountry(code.toUpperCase());
+
+            $(`#pin-${code.toUpperCase()}`).css(&apos;display&apos;, &apos;block&apos;);
+
+            const items = data.countryData[code].navigationItems;
+            $(`#pin-${code.toUpperCase()}`).attr(&apos;data-items&apos;, JSON.stringify(items));
+        });
+    }
+
+    /**
+     * Hide the pins
+     */
+    clearPins(){
+        $(&apos;.wtsim-map .wtsim-pin&apos;).css(&apos;display&apos;, &apos;none&apos;);
+        $(&apos;.wtsim-map .wtsim-pin&apos;).removeAttr(&apos;href&apos;);
+        $(&apos;.wtsim-map .wtsim-pin&apos;).removeAttr(&apos;data-items&apos;);
+    }
+
+    /**
+     * Add color to countries
+     */
+    fillCountries(){
+        $(`.wtsim-map svg [fill=&quot;#dcdfe1&quot;]`).attr(&apos;fill&apos;, this.defaultColor);
+        $(`.wtsim-map svg [fill=&quot;${this.accentColor}&quot;]`).attr(&apos;fill&apos;, this.defaultColor);
+    }
+
+    /**
+     * Add color to a country
+     * @param {String} code
+     * @param {String} color
+     */
+    fillCountry(code, color=null){
+        color = color || this.accentColor;
+
+        $(`.wtsim-map svg [data-name=&quot;${countries[code]}&quot;]`).attr(&apos;fill&apos;, color);
+        $(`.wtsim-map svg [data-name=&quot;${countries[code]}&quot;] path`).attr(&apos;fill&apos;, color);
+
+        if(rCountries[countries[code]]){
+            rCountries[countries[code]].map(c =&gt; {
+                $(`.wtsim-map svg [data-name=&quot;${c}&quot;]`).attr(&apos;fill&apos;, color);
+                $(`.wtsim-map svg [data-name=&quot;${c}&quot;] path`).attr(&apos;fill&apos;, color);
+            });
+        }
+    }
+
+    /**
+     * Gets PDF Vierwer url
+     * @return {String}
+     */
+    getPDFViewerUrl(){
+        return this.getCurrentPath() + &apos;/public/viewer/web/viewer.html&apos;;
+    }
+
+    /**
+     * Gets current path
+     * @return {String}
+     */
+    getCurrentPath(){
+        var fullUrl = scriptEl.src;
+        return fullUrl.substring(0, fullUrl.lastIndexOf(&apos;/&apos;));
+    }
+}</code></pre>
+
+</div>
+
+<footer class="footer">&#xA0;</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

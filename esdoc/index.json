@@ -1,0 +1,1152 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/App.js",
+    "content": "import './styles/index.scss';\r\nimport Mustache from 'mustache';\r\nimport $ from 'jquery';\r\nimport { gsap, TweenLite, Power1 } from 'gsap/all';\r\nimport countries from './config/countries.json';\r\nimport rCountries from './config/related-countries.json';\r\nimport continents from './config/continents.json';\r\nimport pins from './config/pins.json';\r\nimport mainTemplate from './templates/main.html';\r\nimport childMapTemplate from './templates/child-map.html';\r\nimport childMapModalTemplate from './templates/child-map-modal.html';\r\nimport globalMapTemplate from './templates/map-global.html';\r\nimport americaMapTemplate from './templates/map-america.html';\r\nimport africaMapTemplate from './templates/map-africa.html';\r\nimport asiaMapTemplate from './templates/map-asia.html';\r\nimport europeMapTemplate from './templates/map-europe.html';\r\n\r\ngsap.registerPlugin(TweenLite);\r\n\r\nconst scriptEl = document.currentScript;\r\n\r\nexport default class App{\r\n    /**\r\n     * Initialize the object instance\r\n     * @constructor\r\n     */\r\n    constructor(){\r\n        this.$container = $('#wtsim-container');\r\n\r\n        if(!this.$container.length)\r\n            return;\r\n\r\n        this.defaultColor = window.WTSIM_DEFAULT_COLOR || '#dcdfe1';\r\n        this.accentColor = window.WTSIM_ACCENT_COLOR || '#cc1f36';\r\n\r\n        this.render();\r\n    }\r\n\r\n    /**\r\n     * Renders the initial display\r\n     */\r\n    render(){\r\n        // set modal container\r\n        $('body').append($('<div class=\"wtsim-map-modals\"></div>'));\r\n\r\n        // Child Maps and Child Map Modals\r\n        let childMaps = '', childMapModals = '';\r\n        continents.map(continent => {\r\n            var map;\r\n\r\n            if('americas' === continent.id)\r\n                map = americaMapTemplate;\r\n            else if('africa' == continent.id)\r\n                map = africaMapTemplate;\r\n            else if('asia' == continent.id)\r\n                map = asiaMapTemplate;\r\n            else if('europe' == continent.id)\r\n                map = europeMapTemplate;\r\n\r\n            childMaps += Mustache.render(childMapTemplate, {\r\n                ID: continent.id,\r\n                MAP: map,\r\n            });\r\n\r\n            childMapModals += Mustache.render(childMapModalTemplate, {\r\n                ID: continent.id,\r\n                MAP: map,\r\n                TITLE: continent.name,\r\n                DESCRIPTION: window.WTSIM_INNER_DESCRIPTION || 'To learn more about jurisdiction-specific developments, click on the yellow pin and choose the relevant WTS Global publication of choice.',\r\n                MAP_PINS: this.generatePins(continent.countries)\r\n            });\r\n        });\r\n\r\n        this.$container.append(Mustache.render(mainTemplate, {\r\n            TITLE: window.WTSIM_MAIN_TITLE || '[insert title]',\r\n            DESCRIPTION: window.WTSIM_MAIN_DESCRIPTION || '[insert your description here]',\r\n            GLOBAL_MAP: globalMapTemplate,\r\n            CHILD_MAPS: childMaps\r\n        })).addClass('wtsim-loaded');\r\n\r\n        $('.wtsim-map-modals').html(childMapModals);\r\n\r\n        this.eventHandlers();\r\n\r\n        this.fixSVGonIE();\r\n\r\n        this.fetchPins(window.interactiveMap2_Countries || this.$container.data('countries'));\r\n        \r\n        $('body').addClass('wtsim-initialized');\r\n\r\n        console.log('wtsim initialized.');\r\n    }\r\n\r\n    /**\r\n     * Attaches event handlers to the specified element\r\n     */\r\n    eventHandlers(){\r\n        // Paths on click\r\n        var pathTriggers = [\r\n            {\r\n                paths: ['Europe'],\r\n                childMap: '#child-map-europe',\r\n                mapModal: '#map-modal-europe'\r\n            },\r\n            {\r\n                paths: ['South America', 'North America'],\r\n                childMap: '#child-map-americas',\r\n                mapModal: '#map-modal-americas'\r\n            },\r\n            {\r\n                paths: ['Africa'],\r\n                childMap: '#child-map-africa',\r\n                mapModal: '#map-modal-africa'\r\n            },\r\n            {\r\n                paths: ['Asia', 'Australia & Oceania'],\r\n                childMap: '#child-map-asia',\r\n                mapModal: '#map-modal-asia'\r\n            }\r\n        ];\r\n        pathTriggers.map(trigger => {\r\n            trigger.paths.map(path => {\r\n                var $childMap = $(trigger.childMap),\r\n                    $mapModal = $(trigger.mapModal);\r\n                \r\n                this.$container.on('click', '.wtsim-global-map .wtsim-map svg [data-name=\"'+path+'\"] path', () => {\r\n                    this.childMapsTransition({\r\n                        from: $childMap.get(0),\r\n                        to: $mapModal.get(0),\r\n                        before: () => {},\r\n                        after: () => {\r\n                            $('body').addClass('wtsim-child-map-open');\r\n                            setTimeout(() => {$mapModal.addClass('wtsim-ready');}, 300);\r\n                        }\r\n                    });\r\n\r\n                    // this.removeButtons();\r\n                });\r\n                \r\n                $mapModal.on('click', '.wtsim-map-modal-close', () => {\r\n                    this.childMapsTransition({\r\n                        from: $mapModal.get(0),\r\n                        to: $childMap.get(0),\r\n                        before: () => {},\r\n                        after: () => {\r\n                            $('body').removeClass('wtsim-child-map-open');\r\n                            $mapModal.removeClass('wtsim-ready');\r\n                        }\r\n                    });\r\n\r\n                    // this.removeButtons();\r\n                    this.hidePubsBox();\r\n                });\r\n            });\r\n        });\r\n\r\n\r\n        // Name tag on mouse hover\r\n        $('body').find('.wtsim-map').each((key, map) => {\r\n            $('svg [data-name=Countries] path', map).on('mousemove', this.showNameTag);\r\n            $('svg [data-name=Countries] path', map).on('mouseout', this.hideNameTag);\r\n        });\r\n\r\n        // Click on pins\r\n        $('.wtsim-pin').on('click', this.clickPins.bind(this));\r\n\r\n        // Click on different areas of countries\r\n        $('.wtsim-map-modals').on('click', 'svg [data-name=Countries] path', this.clickMapArea.bind(this));\r\n\r\n        // Click on different areas of map\r\n        $('.wtsim-map-modals').on('click', (e) => {\r\n            if(!$(e.target).hasClass('wtsim-pin') && e.target.nodeName.toLowerCase() != 'path' && !$(e.target).hasClass('wtsim-button')){\r\n                // this.removeButtons();\r\n                // this.hideSidebar();\r\n                // this.hidePubsBox();\r\n            }\r\n        });\r\n\r\n        // Click sidebar close button\r\n        $('body').on('click', '.wtsim-sidebar-close', () => {\r\n            this.hideSidebar();\r\n        });\r\n\r\n        // click pubs close button\r\n        $('body').on('click', '.wtsim-pubs .wtsim-pubs-close', () => {\r\n            this.hidePubsBox();\r\n        });\r\n    }\r\n\r\n    /**\r\n     * Animates the map when zooming in/out\r\n     * @param {Object} args\r\n     */\r\n    childMapsTransition(args){\r\n        var fromMap     = args.from,\r\n            toMap       = args.to,\r\n            clone       = fromMap.cloneNode(true),\r\n            before      = args.before,\r\n            after       = args.after;\r\n\r\n        var from    = this.calculatePosition(fromMap),\r\n            to      = this.calculatePosition(toMap);\r\n\r\n        if(typeof before === 'function')\r\n            before();\r\n        \r\n        TweenLite.set([fromMap, toMap], { visibility: 'hidden', scrollTop: 0 });\r\n        TweenLite.set(clone, { position: 'absolute', margin: 0, opacity: 1, visibility: 'visible', backgroundColor: '#fff' });\r\n            \r\n        document.body.appendChild(clone);\r\n        $('body').addClass('wtsim-transitioning');\r\n            \r\n        var style = {\r\n            x: to.left - from.left,\r\n            y: to.top - from.top,\r\n            width: to.width,\r\n            height: to.height,\r\n            autoRound: false,\r\n            ease: Power1.easeOut,\r\n            onComplete: function(){\r\n                TweenLite.set(toMap, { visibility: \"visible\" });\r\n\r\n                document.body.removeChild(clone);\r\n                $('body').removeClass('wtsim-transitioning');\r\n\r\n                if(typeof after === 'function')\r\n                    after();\r\n            }\r\n        };\r\n        \r\n        TweenLite.set(clone, from);  \r\n        TweenLite.to(clone, 0.8, style);\r\n    }\r\n\r\n    /**\r\n     * Calculate the position of child map\r\n     * @param {Element} element\r\n     */\r\n    calculatePosition(element){\r\n        var root    = document.documentElement,\r\n            body    = document.body;\r\n            \r\n        var rect = element.getBoundingClientRect();\r\n        \r\n        var scrollTop  = window.pageYOffset || root.scrollTop  || body.scrollTop  || 0;\r\n        var scrollLeft = window.pageXOffset || root.scrollLeft || body.scrollLeft || 0;\r\n        \r\n        var clientTop  = root.clientTop  || body.clientTop  || 0;\r\n        var clientLeft = root.clientLeft || body.clientLeft || 0;\r\n        \r\n        return {\r\n            top: Math.round(rect.top + scrollTop - clientTop),\r\n            left: Math.round(rect.left + scrollLeft - clientLeft),\r\n            height: rect.height,\r\n            width: rect.width,\r\n        };\r\n    }\r\n\r\n    /**\r\n     * Display the map label name\r\n     * @param {Event} event\r\n     */\r\n    showNameTag(event){\r\n        var $map = $(this).closest('.wtsim-map'),\r\n            $tag = $map.find('.wtsim-name-tag'),\r\n            name = $(this).data('name') || $(this).parent().data('name'),\r\n            offset = $map.get(0).getBoundingClientRect();\r\n\r\n        window.WTSIM_CURRENT_HOVER = name;\r\n\r\n        $tag.text(name).css({\r\n            display: 'block',\r\n            left: Math.abs(offset.left - event.clientX - 10) + 'px',\r\n            top: Math.abs(offset.top - event.clientY - 10) + 'px'\r\n        });\r\n\r\n        $(`[data-name=\"${name}\"]`).addClass('is-hovered');\r\n\r\n        if(rCountries[name]){\r\n            $.each(rCountries[name], (i, e) => {\r\n                $(`[data-name=\"${e}\"]`).addClass('is-hovered');\r\n            });\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Hide the map label name\r\n     */\r\n    hideNameTag(){\r\n        let name = $(this).data('name') || $(this).parent().data('name');\r\n        \r\n        $(this).closest('.wtsim-map').find('.wtsim-name-tag').text('').css('display', 'none');\r\n\r\n        $(`[data-name=\"${name}\"]`).removeClass('is-hovered');\r\n\r\n        if(rCountries[name]){\r\n            $.each(rCountries[name], (i, e) => {\r\n                $(`[data-name=\"${e}\"]`).removeClass('is-hovered');\r\n            });\r\n        }\r\n    }\r\n\r\n    /**\r\n     * @param {Event} event\r\n     */\r\n    clickPins(event){\r\n        if($(event.target).data('items')){\r\n            event.preventDefault();\r\n            this.showPubsBox(event);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * @param {Event} event\r\n     */\r\n    clickMapArea(event){\r\n        let name = $(event.target).data('name') || $(event.target).parent().data('name');\r\n        let code = Object.keys(countries).find(key => countries[key].toLowerCase() === name.toLowerCase());\r\n\r\n        if(code){\r\n            let $pin = $(`#pin-${code}`);\r\n\r\n            if($pin.length)\r\n                $pin[0].click();\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Shows the publication box\r\n     * @param {Event} event\r\n     */\r\n    showPubsBox(event){\r\n        const el = event.target;\r\n\r\n        if(!$(el).length)\r\n            return;\r\n\r\n        const items = $(el).data('items');\r\n\r\n        if(!items)\r\n            return;\r\n\r\n        const code = $(el).data('code');\r\n\r\n        let count = 1;\r\n        const list = items.filter((e, i) => i<999).map(item => {\r\n            const name = item.name || `Publication ${count++}`;\r\n            const type = item.type;\r\n            const href = this.identifyUrlByType(type, item.url);\r\n\r\n            return `<li><a href=\"${href}\" target=\"_blank\">${name}</a></li>`;\r\n        }).join('');\r\n\r\n        const $modal = $('body.wtsim-child-map-open').find('.wtsim-map-modal.wtsim-ready'),\r\n                $box = $modal.find('.wtsim-pubs');\r\n\r\n        $box.find('.wtsim-pubs-head h3').text(countries[code]);\r\n        $box.find('.wtsim-pubs-body').html('<ul class=\"wtsim-pubs-nav\">'+list+'</ul>');\r\n\r\n        const top = $(`#pin-${code}`).css('top');\r\n\r\n        $box.css('top', top).addClass('wtsim-active');\r\n    }\r\n\r\n    /**\r\n     * Hides the any visible publication box\r\n     */\r\n    hidePubsBox(){\r\n        $('.wtsim-map-modal .wtsim-pubs').removeClass('wtsim-active');\r\n\r\n        setTimeout(() => {\r\n            $('.wtsim-map-modal.wtsim-ready .wtsim-pubs .wtsim-pubs-head h3').text('');\r\n            $('.wtsim-map-modal.wtsim-ready .wtsim-pubs .wtsim-pubs-body').html('');\r\n        }, 400);\r\n    }\r\n\r\n    /**\r\n     * Identify url by type\r\n     * @param {String} type\r\n     * @param {String} url\r\n     */\r\n    identifyUrlByType(type, url){\r\n        let href;\r\n        \r\n        switch(type){\r\n            case('pdf'):\r\n                href = `${this.getPDFViewerUrl()}?file=${url}`;\r\n                break;\r\n            default:\r\n                href = url;\r\n        }\r\n\r\n        return href;\r\n    }\r\n\r\n    /**\r\n     * Creates all pins\r\n     * @param {Array} items\r\n     */\r\n    generatePins(items){\r\n        if(!Array.isArray(items))\r\n            return;\r\n\r\n        var element = '<div class=\"wtsim-map-pins\">';\r\n\r\n        items.map(code => {\r\n            if($.inArray(code, Object.keys(pins)) !== -1){\r\n                element += `<a class=\"wtsim-pin\" id=\"pin-${code}\" data-code=\"${code}\" data-name=\"${countries[code]}\" style=\"left:${pins[code][0]}%;top:${pins[code][1]}%;\" target=\"_blank\"><span>${countries[code]}</span></a>`;\r\n            }\r\n        });\r\n\r\n        element += '</div>';\r\n\r\n        return element;\r\n    }\r\n\r\n    /**\r\n     * Fix SVG on Internet explorer\r\n     */\r\n    fixSVGonIE(){\r\n        if(window.document.documentMode){\r\n            var svg = document.querySelectorAll('svg[data-ie-ratio]');\r\n\r\n            for(var i=0;i<svg.length;i++){\r\n                var ratio = JSON.parse(svg[i].getAttribute('data-ie-ratio'));\r\n\r\n                svg[i].setAttribute('preserveAspectRatio', 'xMidYMin slice');\r\n                svg[i].style.width = '100%';\r\n                svg[i].style.overflow = 'visible';\r\n                svg[i].style.height = '1px';\r\n                svg[i].style.paddingBottom = (ratio[1]/ratio[0]*100)+'%';\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Get the pins\r\n     * @param {Array} input\r\n     */\r\n    fetchPins(input){\r\n        this.clearPins();\r\n\r\n        const data = input || {};\r\n\r\n        if(!Object.values(data).length){\r\n            console.log('Data is empty.');\r\n            return;\r\n        }\r\n\r\n        this.fillCountries();\r\n        data.availableCountries.map(code => {\r\n            this.fillCountry(code.toUpperCase());\r\n\r\n            $(`#pin-${code.toUpperCase()}`).css('display', 'block');\r\n\r\n            const items = data.countryData[code].navigationItems;\r\n            $(`#pin-${code.toUpperCase()}`).attr('data-items', JSON.stringify(items));\r\n        });\r\n    }\r\n\r\n    /**\r\n     * Hide the pins\r\n     */\r\n    clearPins(){\r\n        $('.wtsim-map .wtsim-pin').css('display', 'none');\r\n        $('.wtsim-map .wtsim-pin').removeAttr('href');\r\n        $('.wtsim-map .wtsim-pin').removeAttr('data-items');\r\n    }\r\n\r\n    /**\r\n     * Add color to countries\r\n     */\r\n    fillCountries(){\r\n        $(`.wtsim-map svg [fill=\"#dcdfe1\"]`).attr('fill', this.defaultColor);\r\n        $(`.wtsim-map svg [fill=\"${this.accentColor}\"]`).attr('fill', this.defaultColor);\r\n    }\r\n\r\n    /**\r\n     * Add color to a country\r\n     * @param {String} code\r\n     * @param {String} color\r\n     */\r\n    fillCountry(code, color=null){\r\n        color = color || this.accentColor;\r\n\r\n        $(`.wtsim-map svg [data-name=\"${countries[code]}\"]`).attr('fill', color);\r\n        $(`.wtsim-map svg [data-name=\"${countries[code]}\"] path`).attr('fill', color);\r\n\r\n        if(rCountries[countries[code]]){\r\n            rCountries[countries[code]].map(c => {\r\n                $(`.wtsim-map svg [data-name=\"${c}\"]`).attr('fill', color);\r\n                $(`.wtsim-map svg [data-name=\"${c}\"] path`).attr('fill', color);\r\n            });\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Gets PDF Vierwer url\r\n     * @return {String}\r\n     */\r\n    getPDFViewerUrl(){\r\n        return this.getCurrentPath() + '/public/viewer/web/viewer.html';\r\n    }\r\n\r\n    /**\r\n     * Gets current path\r\n     * @return {String}\r\n     */\r\n    getCurrentPath(){\r\n        var fullUrl = scriptEl.src;\r\n        return fullUrl.substring(0, fullUrl.lastIndexOf('/'));\r\n    }\r\n}",
+    "static": true,
+    "longname": "C:/xampp/htdocs/projects/wts/latest/front/src/App.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "scriptEl",
+    "memberof": "src/App.js",
+    "static": true,
+    "longname": "src/App.js~scriptEl",
+    "access": "public",
+    "export": false,
+    "importPath": "wts-interactive-map/src/App.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "class",
+    "name": "App",
+    "memberof": "src/App.js",
+    "static": true,
+    "longname": "src/App.js~App",
+    "access": "public",
+    "export": true,
+    "importPath": "wts-interactive-map/src/App.js",
+    "importStyle": "App",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 51,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#constructor",
+    "access": "public",
+    "description": "Initialize the object instance",
+    "lineNumber": 27,
+    "unknown": [
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "name": "$container",
+    "memberof": "src/App.js~App",
+    "static": false,
+    "longname": "src/App.js~App#$container",
+    "access": "public",
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "name": "defaultColor",
+    "memberof": "src/App.js~App",
+    "static": false,
+    "longname": "src/App.js~App#defaultColor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "name": "accentColor",
+    "memberof": "src/App.js~App",
+    "static": false,
+    "longname": "src/App.js~App#accentColor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#render",
+    "access": "public",
+    "description": "Renders the initial display",
+    "lineNumber": 42,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 56,
+    "kind": "method",
+    "name": "eventHandlers",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#eventHandlers",
+    "access": "public",
+    "description": "Attaches event handlers to the specified element",
+    "lineNumber": 97,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 57,
+    "kind": "method",
+    "name": "childMapsTransition",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#childMapsTransition",
+    "access": "public",
+    "description": "Animates the map when zooming in/out",
+    "lineNumber": 194,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 58,
+    "kind": "method",
+    "name": "calculatePosition",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#calculatePosition",
+    "access": "public",
+    "description": "Calculate the position of child map",
+    "lineNumber": 239,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Element"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "element",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"top\": *, \"left\": *, \"height\": *, \"width\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "method",
+    "name": "showNameTag",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#showNameTag",
+    "access": "public",
+    "description": "Display the map label name",
+    "lineNumber": 263,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Event"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "event",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "hideNameTag",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#hideNameTag",
+    "access": "public",
+    "description": "Hide the map label name",
+    "lineNumber": 289,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 61,
+    "kind": "method",
+    "name": "clickPins",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#clickPins",
+    "access": "public",
+    "description": "",
+    "lineNumber": 306,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Event"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "event",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "clickMapArea",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#clickMapArea",
+    "access": "public",
+    "description": "",
+    "lineNumber": 316,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Event"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "event",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "showPubsBox",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#showPubsBox",
+    "access": "public",
+    "description": "Shows the publication box",
+    "lineNumber": 332,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Event"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "event",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "hidePubsBox",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#hidePubsBox",
+    "access": "public",
+    "description": "Hides the any visible publication box",
+    "lineNumber": 368,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 65,
+    "kind": "method",
+    "name": "identifyUrlByType",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#identifyUrlByType",
+    "access": "public",
+    "description": "Identify url by type",
+    "lineNumber": 382,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "method",
+    "name": "generatePins",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#generatePins",
+    "access": "public",
+    "description": "Creates all pins",
+    "lineNumber": 400,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "items",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "method",
+    "name": "fixSVGonIE",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#fixSVGonIE",
+    "access": "public",
+    "description": "Fix SVG on Internet explorer",
+    "lineNumber": 420,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 68,
+    "kind": "method",
+    "name": "fetchPins",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#fetchPins",
+    "access": "public",
+    "description": "Get the pins",
+    "lineNumber": 440,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "input",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "clearPins",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#clearPins",
+    "access": "public",
+    "description": "Hide the pins",
+    "lineNumber": 464,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "fillCountries",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#fillCountries",
+    "access": "public",
+    "description": "Add color to countries",
+    "lineNumber": 473,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 71,
+    "kind": "method",
+    "name": "fillCountry",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#fillCountry",
+    "access": "public",
+    "description": "Add color to a country",
+    "lineNumber": 483,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "code",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "color",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 72,
+    "kind": "method",
+    "name": "getPDFViewerUrl",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#getPDFViewerUrl",
+    "access": "public",
+    "description": "Gets PDF Vierwer url",
+    "lineNumber": 501,
+    "return": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 73,
+    "kind": "method",
+    "name": "getCurrentPath",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#getCurrentPath",
+    "access": "public",
+    "description": "Gets current path",
+    "lineNumber": 509,
+    "return": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 74,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "import App from './App';\r\n\r\nwindow.addEventListener('DOMContentLoaded', () => new App());",
+    "static": true,
+    "longname": "C:/xampp/htdocs/projects/wts/latest/front/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "kind": "index",
+    "content": "# WTS Interactive MAP\r\n\r\nA dynamic and interactive map.\r\n\r\n\r\n### Installation\r\n\r\n```\r\nnpm install\r\n```\r\n\r\n### Start Dev Server\r\n\r\n```\r\nnpm start\r\n```\r\n\r\n### Build Prod Version\r\n\r\n```\r\nnpm run build\r\n```\r\n\r\n### Features:\r\n\r\n* ES6 Support via [babel](https://babeljs.io/) (v7)\r\n* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)\r\n* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)\r\n\r\nWhen you run `npm run build` we use the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) to move the css to a separate file. The css file gets included in the head of the `index.html`.\r\n",
+    "longname": "C:\\xampp\\htdocs\\projects\\wts\\latest\\front\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\r\n  \"name\": \"wts-interactive-map\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"A dynamic and interactive map.\",\r\n  \"scripts\": {\r\n    \"build\": \"NODE_ENV=production webpack --config webpack/webpack.config.prod.js  --colors\",\r\n    \"start\": \"webpack-dev-server --open --config webpack/webpack.config.dev.js\",\r\n    \"build-doc\": \"./node_modules/.bin/esdoc -c .esdoc.json\"\r\n  },\r\n  \"keywords\": [\r\n    \"wts\",\r\n    \"interactive-map\",\r\n    \"frontend\",\r\n    \"es6\",\r\n    \"javascript\"\r\n  ],\r\n  \"author\": \"Jerome de Castro\",\r\n  \"license\": \"MIT\",\r\n  \"bugs\": {},\r\n  \"devDependencies\": {\r\n    \"@babel/core\": \"^7.12.3\",\r\n    \"@babel/plugin-proposal-class-properties\": \"^7.12.1\",\r\n    \"@babel/plugin-syntax-dynamic-import\": \"^7.8.3\",\r\n    \"@babel/preset-env\": \"^7.12.1\",\r\n    \"@types/pdfjs-dist\": \"^2.1.6\",\r\n    \"babel-loader\": \"^8.1.0\",\r\n    \"clean-webpack-plugin\": \"^2.0.2\",\r\n    \"copy-webpack-plugin\": \"^5.1.2\",\r\n    \"css-loader\": \"^3.6.0\",\r\n    \"esdoc\": \"^1.1.0\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"eslint\": \"^5.16.0\",\r\n    \"eslint-loader\": \"^2.2.1\",\r\n    \"file-loader\": \"^4.3.0\",\r\n    \"html-loader\": \"^1.3.2\",\r\n    \"html-webpack-plugin\": \"^4.5.0\",\r\n    \"mini-css-extract-plugin\": \"^0.8.2\",\r\n    \"sass\": \"^1.51.0\",\r\n    \"sass-loader\": \"^7.3.1\",\r\n    \"style-loader\": \"^0.23.1\",\r\n    \"svg-inline-loader\": \"^0.8.2\",\r\n    \"to-markdown\": \"^3.1.1\",\r\n    \"webpack\": \"^4.44.2\",\r\n    \"webpack-cli\": \"^3.3.12\",\r\n    \"webpack-dev-server\": \"^3.11.0\",\r\n    \"webpack-merge\": \"^4.2.2\",\r\n    \"worker-loader\": \"^3.0.5\"\r\n  },\r\n  \"dependencies\": {\r\n    \"@babel/polyfill\": \"^7.12.1\",\r\n    \"core-js\": \"^3.7.0\",\r\n    \"currentscript\": \"^1.1.1\",\r\n    \"gsap\": \"^3.5.1\",\r\n    \"interactjs\": \"^1.10.0\",\r\n    \"jquery\": \"^3.5.1\",\r\n    \"mustache\": \"^4.0.1\",\r\n    \"pdfjs-dist\": \"^2.5.207\"\r\n  }\r\n}\r\n",
+    "longname": "C:\\xampp\\htdocs\\projects\\wts\\latest\\front\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]
